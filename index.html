@@ -11,10 +11,21 @@
 			<a href="https://github.com/SoftwareAddictionShow/css-fix-element-sizing">Fork me on GitHub</a>
 		</span>
 
-		<h1>CSS Fix Element Sizing</h1>
+		<h1>CSS Fix Element Sizing with Border Box</h1>
 
 		<p>
+			By default, an element size does not include the border or padding.
+			With Border Box, the element padding and border is included in its size.
+		</p>
 
+		<iframe src="default.html" width="300" height="600">
+		</iframe>
+
+		<iframe src="border_box.html" width="300" height="600">
+		</iframe>
+
+		<p>
+			We can apply Border Box to all elements (and pseudo elements), by using this CSS:
 		</p>
 
 		<pre><code data-language="css">
@@ -22,6 +33,7 @@
     box-sizing: border-box;
 }
 		</code></pre>
+
 		<h2>Sources:</h2>
 		<p>
 			<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing#Browser_compatibility">
@@ -33,6 +45,6 @@
 	<script src="js/language/generic.js"></script>
 	<script src="js/language/css.js"></script>
 	<script>
-		console.info('asdasasdasdasd');
+
 	</script>
 </html>

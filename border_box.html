@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<style>
+		*, *::before, *::after {
+			box-sizing: border-box;
+		}
+
+		.parent {
+			background-color: red;
+			width: 100px;
+			height: 100px;
+			margin: 40px;
+			padding: 5px;
+		}
+
+		.child {
+			background-color: lightgreen;
+			width: 100%;
+			height: 100%;
+		}
+
+		.margin_child {
+			background-color: lightgreen;
+			width: 100%;
+			height: 100%;
+			padding: 20px;
+		}
+
+		.border_child {
+			background-color: lightgreen;
+			width: 100%;
+			height: 100%;
+			border: 20px solid blue;
+		}
+	</style>
+	<body>
+		<p>
+			box-sizing: border-box; <br />
+			(fixed behaviour)
+		</p>
+
+		<div class="parent">
+			<div class="child">
+				No padding or border
+			</div>
+		</div>
+
+		<div class="parent">
+			<div class="margin_child">
+				20 px padding
+			</div>
+		</div>
+
+		<div class="parent">
+			<div class="border_child">
+				20 px border
+			</div>
+		</div>
+	</body>
+	<script>
+
+	</script>
+</html>
